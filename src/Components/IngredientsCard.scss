@@ -1,0 +1,24 @@
+.ingredientCard{
+    margin: 20px !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 250px !important;
+    min-height: 100px !important;
+    padding: 30px !important;
+    background-color: #FBFBFB;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 10px !important;
+}
+.ingredientCard__body{
+    max-width: 200px !important;
+    min-height: 150px !important;
+    font-size: 15px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+.ingredientCard__specials{
+    font-size: 14px !important;
+}
