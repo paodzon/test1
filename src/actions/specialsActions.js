@@ -10,3 +10,15 @@ export const getSpecials = () =>{
         })
     }
 }
+
+export const addSpecial =(formvalues,i) =>{
+    return async(dispatch,getState) =>{
+
+        const {data} = await axios.post('http://localhost:3001/specials',{...formvalues});
+        console.log(data)
+        dispatch({
+            type:'ADD_SPECIAL',
+            payload:data
+        })
+    }
+}
